@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="container">
+    <h1>Home Page</h1>
+    <p>You can read more about me here</p>
+
+    <%= link_to "About Me", about_path, class:"btn btn-secondary"%>
+    <%= link_to "Blog", posts_path, class:"btn btn-primary"%>
+
+</div>
