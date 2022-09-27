@@ -11,8 +11,8 @@ class PostsController < ApplicationController
   def show
     @post.update(views:@post.views + 1) 
     @comments = @post.comments.order(created_at: :desc)
-
     mark_notifications_as_read
+
   end
 
   # GET /posts/new
